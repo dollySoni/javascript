@@ -1,0 +1,20 @@
+
+<script>
+    name="Dolly";
+    console.log(name.slice(2,5));// create slice from 2 to 5 indexing
+    console.log(name.replace('Do','Ho'));// find and replace character its case-sansative
+    let frined="Naman";
+    console.log(name.concat(' is a friend ',frined,'Ok'));
+    frined[2]="HH"; // this is not possible because string is immutable
+console.log(frined);
+// Chapter 4 practice set
+
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+const word = 'fox';
+console.log(sentence.includes(word)); // in string have substring it return true
+console.log( `The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+
+let str2="Please give Rs 1000";
+console.log(str2.slice("Please give Rs ".length));
+</script>

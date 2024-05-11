@@ -1,0 +1,37 @@
+<script>
+    let arr=[55,66,8,2,7,1,];
+
+    let a= arr.map((value,index,arrar)=>{
+        console.log(value,index,arrar)
+        return value+1
+    })
+console.log(a);
+// it create new array with return any opration on value
+
+let arrfilter=arr.filter((value)=>{
+    return value<3
+})
+console.log(arrfilter);
+
+// reduce method
+//return only one value perform function operation
+let ar=[55,66,8,2,7,1,];
+let arreduce=arr.reduce((value1,value2)=>{
+    return value1+value2
+})
+console.log(arreduce);
+
+let arr1=[55,66,8,2,7,10,80,40];
+ let newresult=arr1.filter((value)=>{
+     return value%10==0
+ })
+  console.log(newresult);
+
+  // facorial using of reduce method
+
+  let fact=[1,2,3,4,5]
+  let result=fact.reduce((x1,x2)=>{
+     return x1*x2
+  })
+ console.log(result);
+</script>
